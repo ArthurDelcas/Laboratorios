@@ -5,4 +5,6 @@ set(CMAKE_C_STANDARD 23)
 
 add_library(libprg STATIC library.c
         lista/lista.c
-        lista/lista.h)
+        lista/lista.h
+        pilha/pilha.c
+        pilha/pilha.h)
