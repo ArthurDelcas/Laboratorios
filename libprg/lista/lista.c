@@ -20,3 +20,16 @@ int lista_remover(Lista *l, int valor) {
     l->tamanho--;
     return 1;
 }
+
+int lista_buscar(Lista *l, int valor) {
+    for (int i = 0; i < l->tamanho; i++)
+        if (l->dados[i] == valor) return i;
+    return -1;
+}
+
+void lista_imprimir(Lista *l) {
+    printf("[ ");
+    for (int i = 0; i < l->tamanho; i++)
+        printf("%d ", l->dados[i]);
+    printf("]\n");
+}
