@@ -1,7 +1,3 @@
-//
-// Created by aluno on 22/09/2026.
-//
-
 #include "fila.h"
 
 void fila_inicializar(Fila *f) {

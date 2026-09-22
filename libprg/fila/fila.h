@@ -1,7 +1,3 @@
-//
-// Created by aluno on 22/09/2026.
-//
-
 #ifndef LIBPRG_FILA_H
 #define LIBPRG_FILA_H
 
