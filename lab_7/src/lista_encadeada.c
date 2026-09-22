@@ -8,6 +8,11 @@ typedef struct No {
     struct No* proximo;
 };
 
+typedef struct {
+    No* inicio;
+    No tamanho;
+} Lista;
+
 Lista* criar_lista() {
     Lista* lista = (Lista*) malloc(sizeof(Lista));
     if (lista == NULL) {
