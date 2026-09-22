@@ -19,13 +19,17 @@ int fila_cheia(Fila *f) {
 }
 
 int fila_enfileira(Fila *f, int valor) {
-    if (!fila_vazia(f)) {
-        f->qtd++;
-    }
+    if (fila_cheia(f)) return 0;
+    f->dados[f->fim] = valor;
+    f->fim = (f->fim + 1) % TAM_MAX;
+    f->qtd++;
+    return 1;
 }
 
 int fila_desenfileira(Fila *f, int valor) {
-    if (!fila_vazia(f)) {
-        f->qtd--;
-    }
+    if (fila_vazia(f)) return 0;
+    *valor = f->dados[f->inicio];
+    f->inicio = (f->inicio + 1) % TAM_MAX;
+    f->qtd--;
+    return 1;
 }
