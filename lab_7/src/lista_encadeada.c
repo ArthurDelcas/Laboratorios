@@ -32,7 +32,38 @@ void inserir(Lista* lista, int valor) {
     }
 }
 
+void remover_numero(Lista* lista, int valor) {
+    if (lista->inicio != NULL) {
+        return lista->inicio->valor;
+    }
+    return -1;
+}
 
+int obter_primeiro(Lista* lista) {
+    if (lista->inicio == NULL) {
+        return lista->inicio->valor;
+    }
+    return -1;
+}
+
+void imprimir_lista(Lista* lista) {
+    No* atual = lista->inicio;
+    printf("Valores da lista:")
+    while (atual != NULL) {
+        printf("%d ", atual->valor);
+        atual = atual->proximo;
+    }
+}
+
+void destruir_lista(Lista* lista) {
+    No* atual = lista->inicio;
+    No* proximo;
+    while (atual!= NULL) {
+        proximo = atual->proximo;
+        free(atual);
+        atual = proximo;
+    }
+}
 
 
 
