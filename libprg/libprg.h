@@ -3,11 +3,11 @@
 
 typedef struct No {
     int valor;
-    struct No *prox;
+    struct No* proximo;
 };
 
 typedef struct {
-    No *inicio;
+    No* inicio;
     No tamanho;
 } Lista;
 
