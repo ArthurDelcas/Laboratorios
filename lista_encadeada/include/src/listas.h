@@ -1,6 +1,8 @@
 #ifndef LISTA_ENCADEADA_LISTA_ENCADEADA_H
 #define LISTA_ENCADEADA_LISTA_ENCADEADA_H
 
+// Lista Encadeada
+
 typedef struct no no_t;
 
 no_t* criar_lista_encadeada(int valor);
@@ -24,6 +26,8 @@ int tamanho_da_lista_encadeada_circular(no_t* inicio);
 void adicionar_na_posicao_da_lista_encadeada_circular(no_t** inicio, int valor, int posicao);
 no_t* ultimo_no_da_lista_encadeada_circular(no_t* inicio);
 
+
+// Lista Duplamente Encadeada
 
 typedef struct no_duplo no_duplo_t;
 
